@@ -133,4 +133,8 @@ textarea {
     background-color:#535C88 ;
 }
 
+.error {
+    border: 2px solid red; 
+    color: red; 
+}
 /*styling för formulär*/
