@@ -79,7 +79,11 @@ if(meddelande){
 }
 
 
-
+//hamburger
+document.getElementById("hamburger").addEventListener("click", function() {
+    const navLi = document.getElementById("nav-li");
+    navLi.classList.toggle("active");
+})
 
 
 
