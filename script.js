@@ -1,3 +1,4 @@
+//kontakt & validering
 const btn = document.getElementById('btn-send-form')
 
 btn.disabled = true
