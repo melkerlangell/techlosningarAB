@@ -81,6 +81,22 @@ body {
     padding: 10rem;
     color: white;
 }
+#btn-send-form {
+    background-color: #30336B;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-send-form:hover{
+    background-color:#535C88 ;
+}
+
+#btn-send-form:disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+}
 
 .error {
     border: 2px solid red; 
