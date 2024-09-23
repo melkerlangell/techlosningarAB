@@ -7,9 +7,8 @@ body {
     background-color: #0c0f11;
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     margin-top: 100px;
-
 }
 
 .nav-container ul {
@@ -78,53 +77,13 @@ body {
 
 
 /* Styling för formulär*/
-
 .contact{
-    display: flex;
-    justify-content: center;
-    padding: 2rem; 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgb(255, 255, 255); 
-    margin: 2rem 0;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 1rem;
-    max-width: 400px; 
-    width: 100%;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-}
-
-input, textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    background-color: #282828 ;
+    padding: 10rem;
     color: white;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 100%; 
 }
-
-
-textarea {
-    height: 150px;
-    resize: none; 
-}
-
-
 #btn-send-form {
-    padding: 1rem 2rem;
     background-color: #30336B;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -133,8 +92,22 @@ textarea {
     background-color:#535C88 ;
 }
 
+#btn-send-form:disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+}
+
 .error {
     border: 2px solid red; 
     color: red; 
 }
 /*styling för formulär*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
