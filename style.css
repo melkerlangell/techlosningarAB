@@ -206,6 +206,22 @@ body {
     grid-column:4 ;
 }
 
+.grid-container3{
+    display: grid;
+    color: white;
+    text-align: center;
+  
+}
+
+.Tjänster_titel {
+    font-size: 3vw; 
+    text-decoration: underline;
+    padding: 3rem 0;
+    border-top: solid;
+ 
+}
+
+
 
 
 
