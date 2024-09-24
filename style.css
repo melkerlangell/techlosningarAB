@@ -116,6 +116,102 @@ body {
 /*styling för formulär*/
 
 
+/* Styling för Anställda sidan */
+
+.grid-container2{
+    display: grid;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.grid-container2 li{
+    list-style-type: none;
+    margin: 0;
+    padding:3rem 0 0 0;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.grid-container2 p {
+    font-size: 2rem;
+}
+.grid-container2 img{
+    border-radius: 2rem ;
+}
+
+.grid-container2 img:hover{
+    transform: scale(1.05);
+}
+
+.TitelAn{
+    grid-row: 1;
+    grid-column:1/ span 4 ;
+    font-size: 3rem;
+    text-decoration: underline;
+    padding: 3rem 0;
+    border-top: solid;
+}
+
+.Namn1{
+    grid-row: 2;
+    grid-column: 1 ;
+}
+.Namn2{
+    grid-row:2 ;
+    grid-column:3 ;
+}
+.Porträtt1{
+    grid-row: 3;
+    grid-column:1 ;
+    padding: 0 0 5rem 0;
+}
+.Egenskaper1{
+    grid-row: 3;
+    grid-column: 2;
+}
+.Porträtt2{
+    grid-row:3 ;
+    grid-column: 3;
+}
+.Egenskaper2{
+    grid-row:3 ;
+    grid-column:4 ;
+}
+.Namn3{
+    grid-row:4 ;
+    grid-column:1 ;
+}
+.Namn4{
+    grid-row:4 ;
+    grid-column:3 ;
+}
+.Porträtt3{
+    grid-row:5 ;
+    grid-column:1 ;
+}
+.Egenskaper3{
+    grid-row: 5;
+    grid-column: 2;
+}
+.Porträtt4{
+    grid-row:5 ;
+    grid-column:3 ;
+}
+.Egenskaper4{
+    grid-row:5 ;
+    grid-column:4 ;
+}
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .nav-container ul {
         flex-direction: column;
