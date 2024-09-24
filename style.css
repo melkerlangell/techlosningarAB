@@ -141,10 +141,12 @@ body {
 }
 .grid-container2 img{
     border-radius: 2rem ;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .grid-container2 img:hover{
     transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.3);
 }
 
 .TitelAn{
