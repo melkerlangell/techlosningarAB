@@ -4,12 +4,13 @@
 
 body {
     margin: 0;
+    padding: 0;
     background-color: #0c0f11;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     overflow-x: hidden; 
-    margin-top: 100px;
 }
+
 
 .nav-container ul {
     list-style-type: none;
@@ -44,7 +45,7 @@ body {
 
 .nav-container a:hover:after {
     width: 100%;
-}
+} 
 
 .nav-container img {
     width: 5%;
@@ -84,6 +85,10 @@ body {
     color: white;
     cursor: pointer;
     z-index: 1001;
+}
+
+.grid{
+    display: grid;
 }
 
 
@@ -265,12 +270,35 @@ input, textarea {
 
 
 
-
+@media (max-width: 1500px) {
+    .grid-container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container2{
+        color: white;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .grid-container2 li{
+        list-style-type: none;
+        margin: 0;
+        padding:1rem 0 ;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .grid-container2 p {
+        font-size: 3rem;
+    }
+}
 
 
 
 /* media queries */
-@media (max-width: 375px) {
+@media (max-width: 950px) {
     .nav-container ul {
         flex-direction: column;
         position: fixed;
@@ -280,14 +308,10 @@ input, textarea {
         width: 100%;
         background-color: #11161a;
         transition: transform 0.3s ease, right 0.3s ease;
-        z-index: 999;
         margin-right: auto;
         padding: 0.5rem 0;
         overflow-y: auto;
-    }
-
-    body {
-        margin-top: 60px;
+        gap: 5rem;
     }
 
     .nav-container {
@@ -333,9 +357,3 @@ input, textarea {
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
