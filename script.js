@@ -84,6 +84,7 @@ if(meddelande){
 document.getElementById("hamburger").addEventListener("click", function() {
     const navLi = document.getElementById("nav-li");
     navLi.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
 })
 
 

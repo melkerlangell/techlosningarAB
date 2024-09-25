@@ -269,8 +269,8 @@ input, textarea {
 
 
 
-
-@media (max-width: 768px) {
+/* media queries */
+@media (max-width: 375px) {
     .nav-container ul {
         flex-direction: column;
         position: fixed;
@@ -279,17 +279,35 @@ input, textarea {
         height: 100vh;
         width: 100%;
         background-color: #11161a;
-        margin-right: 0%;
         transition: transform 0.3s ease, right 0.3s ease;
+        z-index: 999;
+        margin-right: auto;
+        padding: 0.5rem 0;
+        overflow-y: auto;
+    }
+
+    body {
+        margin-top: 60px;
+    }
+
+    .nav-container {
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
     }
 
     .nav-container img {
-        width: 10%;
+        width: 8%;
+        margin: 0;
     }
 
     .hamburger {
         display: block;
         margin-left: auto;
+        z-index: 1001;
     }
 
     .nav-container ul.active {
@@ -297,12 +315,20 @@ input, textarea {
     }
 
     .nav-container ul li {
-        padding: 2rem;
+        padding: 0.3rem 0 0 0;
         text-align: center;
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .nav-container ul li a {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+    body.menu-open {
+        overflow: hidden;
     }
 }
 
