@@ -269,7 +269,7 @@ input, textarea {
 }
 
 
-
+/* media queries */
 @media (max-width: 1500px) {
     .grid-container2{
         display: flex;
@@ -297,7 +297,7 @@ input, textarea {
 
 
 
-/* media queries */
+
 @media (max-width: 950px) {
     .nav-container ul {
         flex-direction: column;
