@@ -271,11 +271,10 @@ input, textarea {
 
 /* media queries */
 @media (max-width: 1500px) {
+
     .grid-container2{
-        display: flex;
+        display: grid;
         flex-direction: column;
-    }
-    .grid-container2{
         color: white;
         text-align: center;
         width: 100%;
@@ -289,9 +288,74 @@ input, textarea {
         font-size: 1.5rem;
         text-align: center;
     }
+
+    .grid-container2 ul{
+        margin: 0;
+        padding: 0;
+    }
     
     .grid-container2 p {
         font-size: 3rem;
+    }
+
+    .Egenskaper1,.Egenskaper2,.Egenskaper3,.Egenskaper4{
+        margin: 0 0 5rem 0;
+    }
+
+    .TitelAn{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .Namn1{
+        grid-row: 2;
+        grid-column: 1 ;
+    }
+    .Namn2{
+        grid-row:5 ;
+        grid-column:1 ;
+    }
+    .Porträtt1{
+        grid-row: 3;
+        grid-column:1 ;
+        
+    }
+    .Egenskaper1{
+        grid-row: 4;
+        grid-column: 1;
+        
+    }
+    .Porträtt2{
+        grid-row:6 ;
+        grid-column: 1;
+    }
+    .Egenskaper2{
+        grid-row:7 ;
+        grid-column:1 ;
+    }
+    .Namn3{
+        grid-row:8 ;
+        grid-column:1 ;
+    }
+    .Namn4{
+        grid-row:11 ;
+        grid-column:1 ;
+    }
+    .Porträtt3{
+        grid-row:9 ;
+        grid-column:1 ;
+    }
+    .Egenskaper3{
+        grid-row: 10;
+        grid-column: 1;
+    }
+    .Porträtt4{
+        grid-row:12 ;
+        grid-column:1 ;
+    }
+    .Egenskaper4{
+        grid-row:13 ;
+        grid-column:1 ;
     }
 }
 
