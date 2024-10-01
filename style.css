@@ -50,6 +50,7 @@ body {
     left: 0;
     z-index: 1000;
     background-color: #11161a;
+    opacity: 98%;
 }
 
 .nav-container header {
@@ -76,6 +77,53 @@ body {
     z-index: 1001;
 }
 
+
+/* styling för homepage */
+
+.homepage {
+    position: relative;
+    background-image: url('bilder/homepage.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.homepage-title {
+    text-align: center;
+    color: white; 
+    font-size: 3rem; 
+    background-color:#0c0f1191;
+    border-radius: 10%;
+}
+
+.btn-to-content{
+    position: absolute;
+    bottom: 1px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-to-content button{
+    font-size: 5vh;
+    width: 5vw;
+    background-color: #11161a57;
+    border: 1px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+}
+.btn-to-content a{
+    color: white;
+    text-decoration: none;
+}
+.btn-to-content button:hover{
+    transform: scale(1.2);
+}
 
 /* Styling för formulär*/
 .contact{
