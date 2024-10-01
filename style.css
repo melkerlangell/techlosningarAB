@@ -7,7 +7,6 @@ body {
     padding: 0;
     background-color: #0c0f11;
     font-family: 'Poppins', sans-serif;
-    width: 100%;
     overflow-x: hidden; 
 }
 
@@ -31,20 +30,10 @@ body {
     position: relative;
 }
 
-.nav-container a:after {
-    content: "";
-    position: absolute;
-    background-color: rgb(52, 111, 240);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 5px;
-    transition: 0.3s
-}
-
-.nav-container a:hover:after {
-    width: 100%;
-} 
+.nav-container a:hover {
+    background-color: rgba(0, 255, 255, 0.055);
+    border-radius: 20%;
+}  
 
 .nav-container img {
     width: 5%;
@@ -199,16 +188,13 @@ input, textarea {
     display: grid;
     color: white;
     text-align: center;
+    margin:0 1rem;
 }
 #tjänster{
     font-size: 4rem;
     text-decoration: underline;
     padding-top: 5rem;
 }
-
-
-
-
 
 /* media queries */
 
