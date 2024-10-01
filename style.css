@@ -11,7 +11,6 @@ body {
     overflow-x: hidden; 
 }
 
-
 .nav-container ul {
     list-style-type: none;
     display: flex;
@@ -101,9 +100,8 @@ body {
 }
 
 #kontaktTitel{
-    font-size: 3vw; 
+    font-size: 4rem; 
     text-decoration: underline;
-    padding: 3rem 0;
 }
 
 .contact form {
@@ -166,204 +164,53 @@ input, textarea {
 
 /* Styling för Anställda sidan */
 
-.grid-container2{
+.grid2{
     display: grid;
-    color: white;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: white;
 }
 
-.grid-container2 li{
-    list-style-type: none;
-    margin: 0;
-    padding:3rem 0 0 0;
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-.grid-container2 p {
-    font-size: 2rem;
-}
-.grid-container2 img{
-    border-radius: 2rem ;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.grid-container2 img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0,0,0, 0.3);
-}
-
-.TitelAn{
-    grid-row: 1;
-    grid-column:1/ span 4 ;
-    font-size: 3vw; 
+#titel-anställda{
+    text-align: center;
+    color: white;
     text-decoration: underline;
-    padding: 3rem 0;
-    border-top: solid;
+    font-size: 4rem;
 }
 
-.Namn1{
-    grid-row: 2;
-    grid-column: 1 ;
+.grid2 ul{
+    list-style-type: none;
+    font-size: 1.3rem;
 }
-.Namn2{
-    grid-row:2 ;
-    grid-column:3 ;
-}
-.Porträtt1{
-    grid-row: 3;
-    grid-column:1 ;
-    padding: 0 0 5rem 0;
-}
-.Egenskaper1{
-    grid-row: 3;
-    grid-column: 2;
-}
-.Porträtt2{
-    grid-row:3 ;
-    grid-column: 3;
-}
-.Egenskaper2{
-    grid-row:3 ;
-    grid-column:4 ;
-}
-.Namn3{
-    grid-row:4 ;
-    grid-column:1 ;
-}
-.Namn4{
-    grid-row:4 ;
-    grid-column:3 ;
-}
-.Porträtt3{
-    grid-row:5 ;
-    grid-column:1 ;
-}
-.Egenskaper3{
-    grid-row: 5;
-    grid-column: 2;
-}
-.Porträtt4{
-    grid-row:5 ;
-    grid-column:3 ;
-}
-.Egenskaper4{
-    grid-row:5 ;
-    grid-column:4 ;
+.grid2 li{
+    margin-bottom: 1rem;
 }
 
+#anställd1, #anställd2, #anställd3, #anställd4{
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+
+
+
+/* Styling tjänster */
 .grid-container3{
     display: grid;
     color: white;
     text-align: center;
-  
+}
+#tjänster{
+    font-size: 4rem;
+    text-decoration: underline;
+    padding-top: 5rem;
 }
 
-.Tjänster_titel {
-    font-size: 3vw; 
-    text-decoration: underline;
-    padding: 3rem 0;
-    border-top: solid;
- 
-}
+
+
 
 
 /* media queries */
-@media (max-width: 1500px) {
-
-    .grid-container2{
-        display: grid;
-        flex-direction: column;
-        color: white;
-        text-align: center;
-        width: 100%;
-        
-    }
-    
-    .grid-container2 li{
-        list-style-type: none;
-        margin: 0;
-        padding:1rem 0 ;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .grid-container2 ul{
-        margin: 0;
-        padding: 0;
-    }
-    
-    .grid-container2 p {
-        font-size: 3rem;
-    }
-
-    .Egenskaper1,.Egenskaper2,.Egenskaper3,.Egenskaper4{
-        margin: 0 0 5rem 0;
-    }
-
-    .TitelAn{
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-    .Namn1{
-        grid-row: 2;
-        grid-column: 1 ;
-    }
-    .Namn2{
-        grid-row:5 ;
-        grid-column:1 ;
-    }
-    .Porträtt1{
-        grid-row: 3;
-        grid-column:1 ;
-        
-    }
-    .Egenskaper1{
-        grid-row: 4;
-        grid-column: 1;
-        
-    }
-    .Porträtt2{
-        grid-row:6 ;
-        grid-column: 1;
-    }
-    .Egenskaper2{
-        grid-row:7 ;
-        grid-column:1 ;
-    }
-    .Namn3{
-        grid-row:8 ;
-        grid-column:1 ;
-    }
-    .Namn4{
-        grid-row:11 ;
-        grid-column:1 ;
-    }
-    .Porträtt3{
-        grid-row:9 ;
-        grid-column:1 ;
-    }
-    .Egenskaper3{
-        grid-row: 10;
-        grid-column: 1;
-    }
-    .Porträtt4{
-        grid-row:12 ;
-        grid-column:1 ;
-    }
-    .Egenskaper4{
-        grid-row:13 ;
-        grid-column:1 ;
-    }
-}
-
-
-
 
 @media (max-width: 950px) {
     .nav-container ul {
@@ -421,6 +268,23 @@ input, textarea {
 
     body.menu-open {
         overflow: hidden;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width:750px) {
+    #tjänster{
+        font-size: 3rem;
+    }
+    #titel-anställda{
+        font-size: 3rem;
+    }
+    #kontaktTitel{
+        font-size: 3rem;
     }
 }
 
