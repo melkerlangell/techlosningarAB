@@ -309,6 +309,9 @@ input, textarea {
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .homepage-title {
+        font-size: 2rem; 
+    }
 }
 
 @media (max-width:750px) {
@@ -320,6 +323,14 @@ input, textarea {
     }
     #kontaktTitel{
         font-size: 3rem;
+    }
+    .homepage-title {
+        font-size: 1rem; 
+    }
+    
+    .btn-to-content button{
+        font-size: 5vh;
+        width: 5vw;
     }
 }
 
