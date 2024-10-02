@@ -51,7 +51,7 @@ body {
     padding: 10px;
     font-weight: 300;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .nav-container a:hover {
