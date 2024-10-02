@@ -1,0 +1,47 @@
+[
+
+
+    {
+        "ProjektTitel" : "Operation Nautilus",
+        "Kund": "Pentagon", 
+        "Beskrivning": "Projektet syftar till att stödja det amerikanska försvarsdepartementets teknologiska framfart i för undervattensfarkoster",
+        "Deadline": "Projektet har en duration på 10 år med kontinuerligt förändrade av krav, vision och mål."
+
+    },
+    
+
+    {
+        "ProjektTitel" : "Projekt Rädda bönderna",
+        "Kund": "Arla Foods AB", 
+        "Beskrivning": "Projektet syftar till att omedelbart understödja Arla som behöver hjälp att utveckla en kommunikationsplattform för sina bönder.",
+        "Deadline": "Projektet har en maximal duration på 1 månad för att leverera mjukvarulösningen annars går arlabönderna i strejk."
+
+    },
+
+    {
+        "ProjektTitel" : "Green Energy Initiative",
+        "Kund": "Tesla, Inc.",
+        "Beskrivning": "Projektet syftar till att utveckla en innovativ och hållbar energilagringslösning för Teslas framtida elfordon och solpanelssystem.",
+        "Deadline": "Projektet har en duration på 3 år med en målsättning att ha en prototyp färdig för marknadstest inom 18 månader."
+    },
+
+
+    {
+        "ProjektTitel" : "Global E-Commerce Expansion",
+        "Kund": "IKEA AB",
+        "Beskrivning": "Projektet syftar till att förbättra och anpassa IKEA:s e-handelsplattform för internationell expansion, med särskilt fokus på Asien och Latinamerika.",
+        "Deadline": "Projektet har en duration på 2 år med en fasad lansering i olika regioner inom de första 6 månaderna."
+    },
+
+
+    {
+        "ProjektTitel" : "Smart City Infrastructure",
+        "Kund": "Stockholms stad",
+        "Beskrivning": "Projektet syftar till att skapa en infrastruktur för smarta städer som förbättrar trafikflödet, ökar säkerheten och optimerar energianvändningen i Stockholm.",
+        "Deadline": "Projektet är planerat att pågå i 5 år med delmål att implementera system för övervakning och trafikstyrning inom de första 2 åren."
+    }
+
+
+
+
+]

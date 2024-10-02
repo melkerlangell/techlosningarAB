@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig sida</title>
+    <link rel="stylesheet" href="personligSida.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Länka in API för global och axios för vue--->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"> </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"> </script>
+
+    <!-- Länka in javasript filer -->
+    <script src="formulär.js" defer></script>
+    <script src="hamburgerMeny.js" defer></script>
+    <script src="vue.js" defer></script>
+</head>
+
+
+<body>
+
+    <div class="nav-container"> 
+        <header>
+            <nav>
+                <img src="techlogga.png" alt="logga">
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+
+                <ul id="nav-li">
+
+                    <li> <p> Techlösningar AB </p> </li>
+                    <li><a href="#profil">Om mig</a></li>
+                    <li><a href="#kompetens">Kompetenser</a></li>
+                    <li><a href="#projekt"> Projekt </a> </li>
+                    <li><a href="#bildspel">Bildspel</a></li>
+                </ul>
+
+            </nav>
+        </header>
+    </div>
+
+
+ <!-- Profil  -->
+
+    <div class="grid-containerProfil" id="profil">
+
+        <div class="profilBild">
+           <img src="Jesse_Pinkman.webp" alt="bild på noa pinkman">
+        </div>
+
+        <div class="innehåll"> 
+
+            <div class="tjänstRubrik">
+                <h2> CEO på Techlösningar AB   </h2>
+            </div>
+
+
+            <div class="namn">
+                <h1> Noa Hällvall </h1>
+            </div>
+
+            <div class="omMigRubrik">
+                <h2> Om mig...   </h2>
+            </div>
+
+            <div class="omNoaParagraf">
+                <p> Jag är ursprungligen från landskapet med Sveriges absolut bästa dialekt, Östergötland ! </p>
+                <p>Jag har en stor passion för systemutveckling och älskar att utforska ny teknologi och skapa innovativa lösningar.</p>
+                <p>När jag inte sitter framför datorn och programmerar, spenderar jag mycket tid på träning, vilket ger mig energi och balans i vardagen.</p>
+                <p>Jag drivs av en stark vilja att ständigt utvecklas, både inom mitt yrkesområde och personligen, och jag ser fram emot att fortsätta växa inom systemutveckling samtidigt som jag håller mig aktiv och hälsosam.</p>
+
+            </div>
+
+            <div class="rollRubrik">
+                <h2> Min roll på Techlösningar AB...   </h2>
+            </div>
+
+            <div class="omRoll">
+
+                <p>Jag arbetar som systemutvecklare på Techlösningar AB, där jag ansvarar för att utveckla och underhålla skräddarsydda tekniska lösningar för våra kunder. Mitt fokus ligger på att skapa skalbara och effektiva system som inte bara möter dagens krav, utan också är förberedda för framtidens teknologiska utmaningar.</p> 
+                <p>I min roll ingår att arbeta med allt från backend-utveckling till frontend-design, och jag är van vid att arbeta med olika programmeringsspråk och ramverk som exempelvis JavaScript, Python och .NET. Jag brinner för att ständigt förbättra kodens kvalitet och användarupplevelsen genom att följa de senaste utvecklingstrenderna och bästa praxis inom branschen.</p> 
+                <p>På Techlösningar AB har jag varit involverad i flera större projekt där jag har haft en nyckelroll i att designa och implementera komplexa systemarkitekturer. Jag samarbetar nära med både kunder och mina kollegor för att säkerställa att våra lösningar är så effektiva och användarvänliga som möjligt, och jag uppskattar särskilt att arbeta i en miljö där innovation och kvalitet står i centrum.</p> 
+                <p>För mig handlar systemutveckling inte bara om att skriva kod, utan också om att förstå verksamhetens behov och bidra till att skapa lösningar som verkligen gör skillnad. Genom att kombinera min tekniska expertis med min förmåga att samarbeta och kommunicera med olika intressenter, strävar jag alltid efter att leverera högkvalitativa och hållbara system som hjälper våra kunder att nå sina mål.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+<!-- Kompetens -->
+
+    <div class="grid-containerKompetens" id="kompetens">
+
+
+        <div class="kompetensRubrik">
+            <h1> Min kompetens </h1>
+        </div>
+
+        <div class="färdighet">
+
+            <h3 class="färdighetNamn"> HTML </h3>
+
+            <div class="box"> 
+                <div class="färdighetHTML"> </div>
+                <div class="procent"> 70% </div>
+            </div>
+
+        </div>
+
+        <div class="färdighet">
+
+            <h3 class="färdighetNamn"> CSS </h3>
+
+            <div class="box">
+                <div class="färdighetCSS"> </div>
+                <div class="procent"> 60% </div>
+            </div>
+        </div>
+
+        <div class="färdighet">
+
+            <h3 class="färdighetNamn"> JavaScript </h3>
+
+            <div class="box">
+                <div class="färdighetJavaScript"> </div>
+                <div class="procent"> 40% </div>
+            </div>
+        </div>
+
+
+        <div class="färdighet">
+
+            <h3 class="färdighetNamn"> Vue.js </h3>
+
+            <div class="box"> 
+                <div class="färdighetVueJs"> </div>
+                <div class="procent"> 30% </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+<!--Projekt  -->
+
+<div class="grid-containerProjekt" id="projekt">
+
+    <div id="app">
+        
+        <h1 id="projektRubrik"> Mina projekt</h1>
+
+        <button id="projektKnapp" v-if="seKnapp" @click = "visaProjekt"> Hämta projekt  </button>
+
+     
+        <ul v-if = "seProjekt">
+
+            <ul>
+                <li v-for="(ettProjekt, index) in projektLista" :key="index">
+                    <h2>{{ ettProjekt.ProjektTitel }}</h2>  
+                    <p><strong>Kund:</strong> {{ ettProjekt.Kund }}</p>
+                    <p><strong>Beskrivning:</strong> {{ ettProjekt.Beskrivning }}</p>
+                    <p><strong>Deadline:</strong> {{ ettProjekt.Deadline }}</p>
+                </li>
+            </ul>
+        
+        </ul>
+
+    </div>
+
+</div>
+
+
+
+
+<!--Bildspel  -->
+
+<div class="bildSpel" id="bildspel">
+
+    <div class="BildspelsRubrik">
+        <h1> Bildspel </h1>
+    </div>
+
+    <div class="bildSamling">
+        <img src="bildspel/img1.avif" alt = "bildspel" class="bildspelSrc" />
+    </div>
+
+
+    <button class="btn" onclick="bak()"> Tillbaka </button>
+    <button class="btn" onclick="fram()"> Nästa </button>
+
+    <script src="bildspel.js"> </script>
+
+</div>
+
+
+    
+
+
+
+
+
+
+
+
+   
