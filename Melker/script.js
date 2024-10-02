@@ -28,7 +28,6 @@ const app = Vue.createApp({
           }
         });
       }
-
       return filtered;
     }
   },
