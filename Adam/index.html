@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam</title>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="JavaScript/animation.js"></script>
+    <script defer src="JavaScript/app.js"></script>
+    <script defer src="JavaScript/bildspel.js"></script>
+</head>
+<body>
+    <header>
+        <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <input type="checkbox" id="menu-toggle">
+        <ul class="menu">
+            <li><a href="#about">Om mig</a></li>
+            <li><a href="#skills">Kompetenser</a></li>
+            <li><a href="#projectsId">Projekt</a></li>
+            <li><a href="#bildspel">Bildspel</a></li> 
+        </ul>
+    </header>
+
+    <div class="grid">
+        <div class="grid1 scroll" id="about">
+            <img src="pictures/Hank.webp" alt="bild på Adam">
+            <h1>Adam</h1>
+            <h3>Systemutvecklare på Techlösningar AB</h3>
+            <p>
+                Adam Schrader är systemutvecklare på TechLösningar AB, ett framstående teknologi- och IT-företag som fokuserar på att leverera innovativa och skalbara digitala lösningar för företag inom olika branscher. Adam har arbetat på TechLösningar AB i fyra år och har snabbt etablerat sig som en viktig resurs i företagets utvecklingsteam. Med sin djupa tekniska kunskap och förmåga att lösa komplexa problem, bidrar han dagligen till företagets framgång.
+            </p>
+            <p>
+                Adam har en civilingenjörsexamen i datateknik från Chalmers tekniska högskola och har under sin karriär arbetat med både front-end och back-end utveckling. På TechLösningar AB är hans främsta ansvar att utveckla och underhålla företagets molnbaserade plattformar, vilket inkluderar att optimera prestandan och säkerheten i de system som företaget levererar till sina kunder. Han arbetar också nära företagets produktägare och projektledare för att förstå kundernas behov och omsätta dessa till tekniska lösningar.   
+            </p>
+            <p>
+                Hans specialområde inkluderar programmering i flera olika språk, som Java, Python och JavaScript, samt erfarenhet av att arbeta med moderna ramverk som React och Node.js. Adam är också certifierad inom DevOps och AWS, vilket gör honom till en viktig del av företagets molnstrategi.
+            </p>
+            <p>
+                Förutom sitt tekniska arbete är Adam en uppskattad mentor för nya medarbetare på TechLösningar AB. Han brinner för kunskapsdelning och deltar regelbundet i interna utbildningar och tekniska workshops. Hans kollegor beskriver honom som en teamspelare med en positiv attityd, som alltid är redo att hjälpa till och ta sig an nya utmaningar. 
+            </p>
+            <p>
+                På fritiden är Adam engagerad i olika hobbyprojekt, ofta relaterade till open source, och han tycker om att hålla sig uppdaterad om de senaste trenderna inom teknologi och mjukvaruutveckling.
+            </p>
+        </div>
+        <div class="grid2 scroll" id="skills">
+            <h3>Kompetenser</h3>
+            <div class="kompetenser">
+                <p>Java</p>
+                <div class="kompetens-bakgrund">
+                    <div class="kompetens komp1">90%</div>
+                </div>
+                <p>SQL</p>
+                <div class="kompetens-bakgrund">
+                    <div class="kompetens komp2">75%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="kompetens-bakgrund">
+                    <div class="kompetens komp3">25%</div>
+                </div>
+                <p>Vue</p>
+                <div class="kompetens-bakgrund">
+                    <div class="kompetens komp4">15%</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid3 scroll" id="projectsId">
+            <h3>Projekt</h3>
+            <div class="showProjects" id="app">
+                <input
+                    v-model="sokning"
+                    @input="sokningProjects"
+                    placeholder="Sök projekt"
+                >
+
+                <div class="filter">
+                    <p>Filtrera projekt:</p>
+                    <button @click="filtreringProjects('fallande')">&#x25be;</button>
+                    <button @click="filtreringProjects('stigande')">&#x25b4;</button>
+                </div>
+                <div :class="searchingActive ? 'sokning-project-layout' : 'projects'">
+                    <div
+                        class="project"
+                        v-for="project in sokningAvProjekt"
+                        :key="project.id"
+                    >
+                        <h3>{{project.name}}</h3>
+                        <h4>Kund:</h4>
+                        <h5>{{project.kund}}</h5>
+                        <p>Beskrivning:</p>
+                        <p>{{project.description}}</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid4 scroll" id="bildspel">
+            <h3>Bildspel</h3>
+            <div class="bildspel">
+                <div class="bilder">
+                    <img src="pictures/bild1.webp" alt="bild1">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild2.jpg" alt="bild2">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild3.webp" alt="bild3">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild5.jpg" alt="bild5">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild6.webp" alt="bild6">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild7.webp" alt="bild7">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild9.avif" alt="bild8">
+                </div>
+                <div class="bilder">
+                    <img src="pictures/bild10.jpg" alt="bild8">
+                </div>
+            </div>
+            <div class="byta-bild">
+                <a onclick="bytBild(-1)">&#10094;</a>
+                <div id="nummer-bild"></div>
+                <a onclick="bytBild(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

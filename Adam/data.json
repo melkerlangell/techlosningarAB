@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Monster Inc",
+        "kund": "Alien Corp",
+        "description": "Utvecklade en omfattande hemsida för organisationen Monster Inc där fokus låg på att skapa en molnbaserad tjänst som skulle underlätta deras dagliga arbete och samordning. Arbetade i ett team om fem personer där jag hade ansvar för back-end-utvecklingen, inklusive databashantering och API-integrationer för externa tjänster."
+    },
+    {
+        "id": 2,
+        "name": "Robotix Solutions",
+        "kund": "MechTech AB",
+        "description": "Utvecklade en IoT-baserad applikation som möjliggjorde övervakning och kontroll av robotar i produktionslinor. Jag arbetade i ett tvärfunktionellt team där jag ansvarade för att designa och implementera en robust back-end-arkitektur som kunde hantera realtidsdata och kommunikationen mellan enheterna."
+    },
+    {
+        "id": 3,
+        "name": "EcoEnergy Systems",
+        "kund": "GreenTech Innovations",
+        "description": "Byggde en innovativ plattform för övervakning och analys av energiförbrukning inom smarta hem. Mitt fokus var på back-end-utveckling där jag ansvarade för databashantering och integration av olika API:er för energiföretag, vilket möjliggjorde insikter och effektiviseringar för användarna."
+    },
+    {
+        "id": 4,
+        "name": "Quantum Computing Labs",
+        "kund": "TechGiant Corp",
+        "description": "Deltog i utvecklingen av en banbrytande kvantberäkningsplattform för simulering av komplexa algoritmer. Jag fokuserade på att optimera beräkningsresurser och säkerställa systemets skalbarhet. Som ledare för back-end-utvecklingen implementerade jag lösningar som kraftigt förbättrade prestandan."
+    },
+    {
+        "id": 5,
+        "name": "CyberShield Security",
+        "kund": "SecureIT AB",
+        "description": "Utvecklade en avancerad säkerhetsplattform för att upptäcka och förebygga cyberattacker i realtid. Jag ansvarade för designen av back-end-systemet och implementerade olika säkerhetsprotokoll som skyddade mot intrång och dataförluster, vilket resulterade i ett mer säkert digitalt miljö."
+    },
+    {
+        "id": 6,
+        "name": "HealthTrack App",
+        "kund": "Wellness Corp",
+        "description": "Skapade en mobilapplikation som gör det möjligt för användare att övervaka och analysera sin hälsodata. Jag hade ansvar för både back-end-utvecklingen och integrationen med externa hälsotjänster, vilket säkerställde att användarna fick tillgång till värdefull information om sin hälsa."
+    },
+    {
+        "id": 7,
+        "name": "SmartHome Hub",
+        "kund": "Home Innovations",
+        "description": "Utvecklade en omfattande plattform för att styra och övervaka smarta hem-enheter. Fokus låg på back-end-utveckling och realtidsdatahantering, där jag implementerade lösningar för att möjliggöra sömlös kommunikation mellan enheter och användargränssnitt."
+    },
+    {
+        "id": 8,
+        "name": "TravelBuddy",
+        "kund": "Global Travels",
+        "description": "Byggde en webbaserad plattform som hjälper resenärer att planera och organisera sina resor på ett effektivt sätt. Jag ansvarade för serverarkitekturen och API-integrationerna som möjliggjorde interaktion med externa tjänster, vilket förbättrade användarupplevelsen avsevärt."
+    },
+    {
+        "id": 9,
+        "name": "FinTrack",
+        "kund": "FinanceCorp",
+        "description": "Utvecklade en finansiell plattform för att övervaka och analysera investeringar på ett intuitivt sätt. Jag ledde back-end-utvecklingen och dataanalysen, där jag implementerade algoritmer som möjliggjorde insikter och rapportering i realtid för användarna."
+    },
+    {
+        "id": 10,
+        "name": "EduLearn",
+        "kund": "LearnTech AB",
+        "description": "Skapade en e-lärandeplattform för onlinekurser som revolutionerade sättet att lära sig på nätet. Jag ansvarade för databashanteringen och back-end-integrationen med kursinnehållet, vilket möjliggjorde en smidig och användarvänlig plattform för studenter och lärare."
+    },
+    {
+        "id": 11,
+        "name": "AutoConnect",
+        "kund": "Auto Innovations",
+        "description": "Utvecklade en plattform för att underlätta kommunikation och datautbyte mellan olika fordon och infrastrukturtjänster. Jag ansvarade för back-end-arkitekturen och integrerade realtidsanalysfunktioner för att optimera trafikflöden."
+    },
+    {
+        "id": 12,
+        "name": "MarketAnalyzer",
+        "kund": "Data Insights Ltd.",
+        "description": "Byggde en dataanalysplattform som hjälper företag att övervaka marknadstrender och konkurrensanalys. Jag ansvarade för back-end-lösningar och databashantering, vilket möjliggjorde djupgående insikter och rapportering."
+    }
+]
