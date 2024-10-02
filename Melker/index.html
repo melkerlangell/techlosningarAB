@@ -14,6 +14,7 @@
 </head>
 <body>
     <div id="app">
+        <!-- nav bar -->
     <div class="nav-container">
         <header>
             <button class="tillbakaKnapp">Tillbaka till gemensamma sidan</button>
@@ -31,10 +32,9 @@
         </header>
     </div>
 
-    
+    <!-- första sida -->
     <section class="hidden">
     <div class="hem" id="hem">
-        
         <h1 class="namn1">MELKER
             <br>
             <span>LANGELL</span>
@@ -42,6 +42,7 @@
     </div>
 </section>
 
+<!-- om mig sida -->
     <section class="hidden">
     <div class="om-mig" id="om-mig">
         <h1>Om mig</h1>
@@ -59,7 +60,7 @@
                     <img src="IMG_8007.jpg" alt="bild3">
                 </div>
     
-                 <a class="bak" onclick="bytSlide(-1)"><span class="material-symbols-outlined"> <!--för att symbolen ska visas -->
+                 <a class="bak" onclick="bytSlide(-1)"><span class="material-symbols-outlined"> 
                     arrow_back_ios
                     </span></a>
                 <a class="fram" onclick="bytSlide(1)"><span class="material-symbols-outlined">
@@ -92,7 +93,7 @@
     </div>
 </section>
 
-
+<!-- projekt sida -->
     <section class="hidden">
     <div class="projekt" id="projekt">
         <h1>Projekt</h1>
@@ -113,14 +114,14 @@
             >
               <h2>{{projektvue.namn}}</h2>
               <span>{{projektvue.beskrivning}}</span>
-              <span>Kund: {{projektvue.kund}}</span> <!-- Ny rad för kund -->
+              <span>Kund: {{projektvue.kund}}</span> 
               <img :src="projektvue.imageUrl" alt="projectvue">
             </a>
         </div>
     </div>
 </section>
 
-
+<!-- kontakt sida -->
     <section class="hidden">
     <div class="kontakt" id="kontakt">
         <h1>Kontakt</h1>
