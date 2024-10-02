@@ -35,8 +35,6 @@ header{
 
 .menu li:hover{
     transform: scale(1.05);
-    background-color: #d640451a;
-    border-radius: 50%;
 }
 
 .menu a{
