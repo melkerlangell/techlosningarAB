@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+    <div class="nav-container">
+        <header>
+            <button class="tillbakaKnapp">Tillbaka till gemensamma sidan</button>
+            <nav>
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+                <ul id="nav-li">
+                    <li><a href="#hem">Hem</a></li>
+                    <li><a href="#om-mig">Om mig</a></li>
+                    <li><a href="#projekt">Projekt</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    
+    <section class="hidden">
+    <div class="hem" id="hem">
+        
+        <h1 class="namn1">MELKER
+            <br>
+            <span>LANGELL</span>
+        </h1>
+    </div>
+</section>
+
+    <section class="hidden">
+    <div class="om-mig" id="om-mig">
+        <h1>Om mig</h1>
+        <p>Den 7 maj runt 5 snåret på eftermiddagen år 2002 anlände jag till denna värld. Enda sedan jag var var liten så har jag alltid haft ett intresse för datorer, spel och teknik. Som en stolt medarbetare på Techlösningar AB tänker jag ge dig den service DU behöver!</p>
+        
+        <div class="om-mig-content">
+            <div class="carousel-container">
+                <div class="bild">
+                    <img src="IMG_8023.JPG" alt="bild1">
+                </div>
+                <div class="bild">
+                    <img src="IMG_8012.JPG" alt="bild2">
+                </div>
+                <div class="bild">
+                    <img src="IMG_8007.jpg" alt="bild3">
+                </div>
+    
+                 <a class="bak" onclick="bytSlide(-1)"><span class="material-symbols-outlined"> <!--för att symbolen ska visas -->
+                    arrow_back_ios
+                    </span></a>
+                <a class="fram" onclick="bytSlide(1)"><span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span></a>
+            </div>
+        
+
+            <div class="skill">
+                <h2>Egenskaper</h2>
+    
+                <ul>
+                <li><h3>HTML</h3>
+                    <span class="bar"><span class="html"></span></span>
+                </li>
+                <li><h3>Java</h3>
+                    <span class="bar"><span class="java"></span></span>
+                </li>
+                <li><h3>C#</h3>
+                    <span class="bar"><span class="csharp"></span></span>
+                </li>
+                <li><h3>SQL</h3>
+                    <span class="bar"><span class="sql"></span></span>
+                </li>
+            </ul>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+    <section class="hidden">
+    <div class="projekt" id="projekt">
+        <h1>Projekt</h1>
+
+        <input type="text" v-model="searchQuery" placeholder="Sök projekt..." class="sök-bar">
+
+        <div class="sort-knappar">
+            <button @click="sortBy('namn')">Sortera efter namn (A-Ö)</button>
+            <button @click="sortBy('kund')">Sortera efter kund (A-Ö)</button>
+        </div>
+
+        <div class="projekt-container">
+            <a
+              class="projektvue"
+              v-for="projektvue in filteredProjects"
+              :key="projektvue.id"
+              :href="projektUrl(projektvue)"
+            >
+              <h2>{{projektvue.namn}}</h2>
+              <span>{{projektvue.beskrivning}}</span>
+              <span>Kund: {{projektvue.kund}}</span> <!-- Ny rad för kund -->
+              <img :src="projektvue.imageUrl" alt="projectvue">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <section class="hidden">
+    <div class="kontakt" id="kontakt">
+        <h1>Kontakt</h1>
+        <div class="contact" id="contact-f"></div>
+            <form id="contact-form">
+                <label for="full-name">Namn:</label>
+                <input type="text" id="full-name" placeholder="Sven Svensson">
+                <br>
+                <label for="epost">E-post:</label>
+                <input type="email" id="epost" placeholder="sven@svensson.se">
+                <br>
+                <label for="tlf">Telefonnummer:</label>
+                <input type="tel" id="tlf" placeholder="0102030405">
+                <br>
+                <label for="msg">Meddelande:</label>
+                <textarea id="msg" name="message" maxlength="201" placeholder="Skriv ditt meddelande här..."></textarea>
+                <br>
+                <button id="btn-send-form">Skicka</button>
+            </form>
+        </div>
+    </section>
+    </div>
+</body>
+</html>

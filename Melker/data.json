@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "namn": "Trädtoppen",
+      "beskrivning": "En sida jag gör åt min polares företag.",
+      "kund": "Rasmus",
+      "imageUrl": "./tradtoppenliten.png"
+    },
+    {
+      "id": 2,
+      "namn": "Photos AB",
+      "beskrivning": "Hemsida åt företag som fotograferar.",
+      "kund": "Arnold",
+      "imageUrl": "./tradtoppenliten.png"
+    },
+    {
+      "id": 3,
+      "namn": "Frizzan",
+      "beskrivning": "Hemsida till min mammas frisörsalong.",
+      "kund": "Moder",
+      "imageUrl": "./tradtoppenliten.png"
+    },
+    {
+      "id": 4,
+      "namn": "Ultra Gaming",
+      "beskrivning": "Hemsida åt företag som gör spel.",
+      "kund": "Tor",
+      "imageUrl": "./tradtoppenliten.png"
+    },
+    {
+      "id": 5,
+      "namn": "Ultra Movies",
+      "beskrivning": "Hemsida åt företag som gör filmer",
+      "kund": "Sixten",
+      "imageUrl": "./tradtoppenliten.png"
+    }
+  ]
+  
