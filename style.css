@@ -102,23 +102,25 @@ body {
     border-radius: 10%;
 }
 
-.btn-to-content{
+.arrow-to-content{
     position: absolute;
     bottom: 1px; 
     left: 50%;
     transform: translateX(-50%);
 }
-.btn-to-content button{
-    font-size: 5vh;
-    width: 5vw;
+
+.arrow-to-content a{
+    font-size: 10vh;
+    width: 100%;
     background-color: #11161a57;
     border: 1px;
     border-radius: 10%;
     transition: all 0.3s ease;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-.btn-to-content button:hover{
+.arrow-to-content button:hover{
     transform: scale(1.2);
 }
 
@@ -334,9 +336,8 @@ input, textarea {
         font-size: 1rem; 
     }
     
-    .btn-to-content button{
-        font-size: 5vh;
-        width: 5vw;
+    .arrow-to-content a{
+        font-size: 7vh;
     }
 }
 
