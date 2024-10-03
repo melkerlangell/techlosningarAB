@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer> </script>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="menu"> 
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menuIcon">&#9776;</label>
+             <nav>
+                 <a href="">Start</a>
+                 <a href="#färdigheter">Färdigheter</a>
+                 <a href="#bildspel">Bildspel</a>
+                 <a href="#proj">Projekt</a>
+              </nav>
+        </div>
+
+        <div class="titel">
+            <h1>Välkommen till Eric:s sida!</h1>
+            <h2>Programmerare för Techlösningar AB</h2>
+            <p>Vi på techlösningar kan lösa både stora och små problem:</p>
+            <p>Vi är engagerade</p>
+            <p>Vi är kompetenta</p>
+            <p>vi är förstående</p>
+        </div>
+
+        <div class="profilbild">
+            <img src="Walter_White.webp" alt="profil">
+        </div>
+
+        <div class="omMig vänster">
+            <h1>Om mig</h1>
+            <p>Som programmerare på Techlösningar AB har jag haft förmånen att delta i flera innovativa projekt som har haft stor påverkan på våra kunder och samhället i stort.</p>
+            <p>Ett av mina mest betydelsefulla projekt var utvecklingen av en e-handelsplattform för en lokal butikskedja. Målet var att skapa en användarvänlig webbplats som skulle möjliggöra för kunder att handla online, särskilt under pandemin. Jag använde mig av moderna ramverk som Vue.js för frontend och Node.js för backend, vilket resulterade i en plattform som kunde hantera hundratals produkter och erbjuda en smidig checkout-process. Efter lanseringen ökade butikens försäljning med 40 % på bara några månader.</p>
+            <p>Ett annat spännande projekt var att skapa en mobilapp för hälsovård. Tillsammans med vårt team utvecklade vi en app som tillåter användare att spåra sina hälsodata och boka läkarbesök direkt från sin telefon. Jag var ansvarig för att integrera en säker databaslösning och säkerställa att appen uppfyller alla GDPR-krav. Appen har fått positiva omdömen och har över 10 000 nedladdningar.</p>
+            <p>Dessutom ledde jag ett projekt för att implementera en intern kommunikationslösning för vårt företag. Genom att utveckla en plattform där anställda kan dela dokument, diskutera projekt och hålla videomöten, har vi förbättrat vår arbetsflöde och ökat produktiviteten. Denna lösning har blivit ovärderlig, särskilt under distansarbete.</p>
+            <p>Sammanfattningsvis, mina erfarenheter på Techlösningar AB har inte bara utvecklat mina tekniska färdigheter, utan också gett mig insikt i hur teknologi kan förbättra verksamheter och samhället i stort. Jag ser fram emot att fortsätta bidra till innovativa lösningar och göra skillnad i framtida projekt.</p>
+        </div>
+
+        <div class="färdigheter dölj" id="färdigheter">
+
+            <h3>Färdigheter</h3>
+
+            <div class="färdTitel">HTML</div>
+                <div class="border">
+                  <div class="ProgHTML"> 70% </div> 
+            </div>
+
+            <div class="färdTitel">CSS</div>
+                <div class="border">
+                  <div class="ProgCSS"> 40% </div> 
+            </div>
+
+            <div class="färdTitel">Javascript</div>
+                <div class="border">
+                  <div class="ProgJavascript"> 90% </div> 
+            </div>
+            <div class="färdTitel">Vue</div>
+                <div class="border">
+                  <div class="ProgVue"> 20% </div> 
+            </div>
+
+        </div>
+
+
+        <div class="bildspel dölj" id="bildspel">
+
+            <h1> Bildspel</h1>
+
+            <div class="bilder">
+                <img class="bild1" src="Bakgrund.jpg" alt="Stärnhimmel">
+                <img class="bild2" src="Mountain_sunset.jpeg" alt="Solnedgång över berg">
+                <img class="bild3" src="Ocean.jpg" alt="Hav">
+                <button class="tillbaka" onclick="föregåendebild()">&#10094;</button>
+                <button class="nästa" onclick="nästabild()">&#10095;</button>
+            </div>
+              
+
+        </div>
+ 
+        <div class="projekten dölj" id="proj">
+            <h1>Projekt</h1>
+            <div class="Sökbar">
+                <input type="text" v-model="söktext" placeholder="Sök efter projekt!" />
+            </div>
+            <button class="Filtrera" @click="sorteraProjekt">Sortera i bokstavsordning</button>
+            <div class="project-container">
+                <div class="Företag" v-for="info in filtreradeProjekt" :key="info.Projekt">
+                    <h2>Projekt: {{ info.Projekt }}</h2>
+                    <p>Kund: {{ info.Kund }}</p>
+                    <p>Anställda: {{ info.Anställda }}</p>
+                    <p>Geografisk position: {{ info['Geografisk position'] }}</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+
+
+</html>
