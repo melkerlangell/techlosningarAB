@@ -146,7 +146,7 @@ header{
     grid-template-columns: 1fr;
     gap: 20px;
     padding-top: 1rem;
-     margin: 0 30rem; 
+    margin: 0 30rem; 
 }
 .project{
     background-color: #d640458a;
@@ -211,7 +211,6 @@ header{
 
 .byta-bild a:hover{
     transform: scale(1.3);
-
 }
 
 
