@@ -177,12 +177,15 @@ h3{
 
 .Sökbar{
     margin: 2rem 0;
-    scale: 2;
+    
+    transform: scale(2);
+    
 }
 
 .Filtrera{
     margin: 2rem 0;
-    scale: 1.5;
+    width: 200px;
+    height: 60px;
 
 }
 
@@ -305,14 +308,12 @@ h3{
 .dölj{
     opacity: 0;
     transition: 2s all;
-    transform: translateX(-500px);
+    
 }
 
 .visa
 {
     opacity: 1;
-    transform: translateX(0);
-
 }
 
 
@@ -388,7 +389,7 @@ h3{
 
     .container{
         display:inline-block;
-        grid-template-columns: 1; 
+        grid-template-columns: repeat(1, 1fr); 
     }
 
 
