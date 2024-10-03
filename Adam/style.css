@@ -112,6 +112,19 @@ header{
     width: 15%;
 }
 
+@keyframes kompetensAnimation{
+    0%{
+        width: 10%;
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.animateScrollSkill{
+    animation: kompetensAnimation 2s ease; 
+}
+
 
 .grid3{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.184);
@@ -230,19 +243,6 @@ header{
     100%{
         opacity: 1;
     }
-}
-
-@keyframes kompetensAnimation{
-    0%{
-        width: 10%;
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-.animateScrollSkill{
-    animation: kompetensAnimation 2s ease; 
 }
 
 .scroll{
