@@ -40,7 +40,6 @@ body {
     width: 5%;
     margin: 0;
     padding: 0;
-    box-shadow: 50px;
 }
 
 .nav-container {
@@ -116,11 +115,9 @@ body {
     border: 1px;
     border-radius: 10%;
     transition: all 0.3s ease;
-}
-.btn-to-content a{
     color: white;
-    text-decoration: none;
 }
+
 .btn-to-content button:hover{
     transform: scale(1.2);
 }
