@@ -1,0 +1,52 @@
+[
+
+    {
+        "Projekt" : "Hotel California",
+        "Kund": "Eagles", 
+        "Anställda": "1 000 000",
+        "Geografisk position": "Norge"
+
+    },
+    
+
+    {
+        "Projekt" : "Alabama",
+        "Kund": "Lynnyrd Skynnyrd", 
+        "Anställda": "300 000 ",
+        "Geografisk position": "USA"
+
+    },
+
+    {
+        "Projekt" : "Sultans of swing",
+        "Kund": "Dire straits", 
+        "Anställda": "800 000 ",
+        "Geografisk position": "Tyskland"
+
+    },
+
+    {
+        "Projekt" : "Everlong",
+        "Kund": "Foofighters", 
+        "Anställda": " 1 500 000 ",
+        "Geografisk position": "Sverige"
+
+    },
+
+    {
+        "Projekt" : "Californication",
+        "Kund": "Red Hot Chilli Peppers", 
+        "Anställda": "500 000 ",
+        "Geografisk position": "Finland"
+
+    },
+
+    {
+        "Projekt" : "Iron man",
+        "Kund": "Black sabbath", 
+        "Anställda": "700 000 ",
+        "Geografisk position": "Danmark"
+
+    }
+
+]

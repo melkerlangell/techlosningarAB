@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    color: white;
+    background-image: linear-gradient(#434343, #000000 ) ;
+    font-family: 'Poppins';
+}
+
+
+
+#menu-toggle:checked ~ nav {
+    display: block;
+}
+
+#menuIcon{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+
+
+
+/* Container  */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    
+}
+
+.menu{
+    grid-row: 1;
+    grid-column: 1 / span 6;
+    background-color: black;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+}
+
+.titel{
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    animation: 1s slide-fromleft;
+    box-shadow: 1rem 1rem rgb(54, 53, 53);
+    
+}
+
+.profilbild{
+    grid-row: 2;
+    grid-column: 5 ;
+    animation: 1s slide-fromright;
+}
+
+.omMig{
+    grid-row: 3;
+    grid-column: 2 / span 4;
+    margin-top: 10rem;
+}
+
+.färdigheter{
+
+    grid-row: 4;
+    grid-column: 2 / span 4;
+    margin-top: 30rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgb(54, 53, 53);
+    padding: 2rem 3rem;
+}
+
+.bildspel{
+    grid-row: 5;
+    grid-column: 2 / span 4;    
+    margin: 20rem 0 20rem 0;
+    position: relative;
+}
+
+.projekten{
+    grid-row: 6;
+    grid-column: 1/ span 6;
+}
+
+.Företag {
+    background-color: darkgrey;
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+/* bildspel */
+
+.bilder img{
+    width: 100%;
+    height: 500px;
+    display: none;
+}
+
+ .bildspel img.displaySlide {
+    display: block;
+ }
+
+ .bildspel img.taBort{
+    display: none;
+ }
+
+
+ .tillbaka{
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    font-size: 2rem;
+ }
+
+ .nästa{
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    font-size: 2rem;
+ }
+
+ .bildspel h1{
+    margin-bottom: 5rem;
+ }
+
+ /* Projekt container */
+
+ .project-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+/* Övrigt */
+
+
+/* Nav */
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0 5%;
+}
+
+a:hover{
+    color: blue;
+}
+
+
+/* Övrigt */
+
+h1{
+    font-size: 5rem;
+    margin: 0;
+    color: orangered;
+}
+
+h2{
+    font-size: 2rem;
+    color: #006DB5;
+}
+
+h3{
+    font-size: 4rem;
+    
+}
+
+.färdTitel{
+    font-size: 2rem;
+    margin: 2.5rem 0 0 1rem;
+}
+
+.projekten h1{
+    margin-bottom: 5rem;
+}
+
+.Sökbar{
+    margin: 2rem 0;
+    scale: 2;
+}
+
+.Filtrera{
+    margin: 2rem 0;
+    scale: 1.5;
+
+}
+
+
+
+/*Skillbar  */
+.border{
+    border: solid;
+    border-radius: 2rem;
+    height: 2rem;
+    background-color: grey;
+}
+
+.ProgHTML{
+    background: orangered;
+    border-radius: 2rem;
+    height: 2rem;
+    animation: 2s skill70 forwards;
+    font-size: 1.4rem;
+}
+
+.ProgCSS{
+    background: orangered;
+    border-radius: 2rem;
+    height: 2rem;
+    animation: 2s skill40 forwards;
+    font-size: 1.4rem;
+}
+
+.ProgJavascript{
+    background: orangered;
+    border-radius: 2rem;
+    height: 2rem;
+    animation: 2s skill90 forwards;
+    font-size: 1.4rem;
+}
+
+.ProgVue{
+    background: orangered;
+    border-radius: 2rem;
+    height: 2rem;
+    animation: 2s skill20 forwards;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+/* Animationer */
+
+
+@keyframes skill70{
+    from{
+        
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes skill40{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 40%;
+    }
+}
+
+@keyframes skill90{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes skill20{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 20%;
+    }
+}
+
+@keyframes slide-fromleft{
+    from{
+        transform: translateX(-600px);
+    }
+
+    to{
+        transform: translate(0);
+    }
+
+}
+
+@keyframes slide-fromright{
+
+    from{
+        transform: translate(500px);
+    }
+
+    to{
+        transform: translate(0);
+    }
+
+}
+
+
+
+
+.dölj{
+    opacity: 0;
+    transition: 2s all;
+    transform: translateX(-500px);
+}
+
+.visa
+{
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+
+/* Mediaqueres */
+
+@media (max-width: 1300px) {
+    .project-container {
+        
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .titel{
+        grid-column: 1 / span 2;
+        margin: 0 2rem;
+    }
+
+    .profilbild{
+        grid-column: 3;
+        margin: 0 2rem;
+    }
+
+    .omMig{
+        grid-row: 3;
+        grid-column: 1 / span 3;
+        margin: 0 2rem;
+        margin-top: 10rem;
+    }
+
+    .färdigheter{
+        
+        grid-column: 1 / span 3;
+        margin: 0 2rem;
+        margin-top: 10rem;
+
+        
+    }
+
+    .bildspel{
+        grid-column: 1 / span 3;
+        margin: 0 2rem;
+        margin-top: 10rem;
+    }
+
+    .projekten{
+        margin-top: 10rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    
+    nav{
+        display: flex;
+        margin: auto;
+    }
+    
+    
+}
+
+@media (max-width: 850px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .container{
+        display:inline-block;
+        grid-template-columns: 1; 
+    }
+
+
+    .titel{
+        grid-column: 1;
+        margin-right: 8rem ;
+        margin: 0 2rem;
+    }
+
+    .profilbild{
+        grid-column: 2;
+        margin: 0 2rem;
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+    }
+
+    #menuIcon{
+        display: block;
+        text-align: left;
+    }
+
+    nav{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 620px) {
+    .project-container {
+
+        font-size: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .container{
+        display: block;
+        
+    }
+
+    h3{font-size: 3rem;}
+
+    
+}
