@@ -84,9 +84,6 @@ body {
     background-image: url('bilder/homepage.webp');
     background-size: cover;
     background-position: center;
-    z-index: 1;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 100vw;  
     display: flex; 

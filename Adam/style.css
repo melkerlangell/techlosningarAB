@@ -1,7 +1,9 @@
+/* Tryck på länkar gör en snygg scroll istället för att hoppa dit direkt */
 html{
     scroll-behavior: smooth;
 }
 
+/* styling för bodyn */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,10 +12,10 @@ body{
     background-color:#11161a73;
 }
 
+/* Header och meny */
 header{
     background-color: #11161a;
     padding: 1rem 0;
-   
 }
 #menu-toggle {
     display: none;
@@ -42,7 +44,7 @@ header{
     text-decoration: none;
 }
 
-
+/* Gridnätet för allt innehåll */
 .grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -53,6 +55,7 @@ header{
     box-shadow: 0px 2px 5px 8px rgba(0, 0, 0, 0.184);
 }
 
+/* Om mig sidan */
 .grid1{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.184);
     grid-column: 1 / 2;
@@ -76,6 +79,7 @@ header{
     padding: 0 3rem;
 }
 
+/* Kompetenser */
 .grid2{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.184);
     grid-column: 2;
@@ -112,6 +116,7 @@ header{
     width: 15%;
 }
 
+/* Animation för skillbars går från 10% till 100% av sin width (det som är definerat i komp1,2,3,4 och opacitet från 50% till 100%*/
 @keyframes kompetensAnimation{
     0%{
         width: 10%;
@@ -125,7 +130,7 @@ header{
     animation: kompetensAnimation 2s ease; 
 }
 
-
+/* Projekt */
 .grid3{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.184);
     grid-column: 1 / 3;
@@ -148,12 +153,14 @@ header{
     border-radius: 10%;
     color: #ffffff;
 }
+/* Första gridlayouten för projekt är fyra projekt per rad */
 .projects{
     display: grid;
     gap: 20px;
     padding-top: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+/* under sökning får det till ett projekt per rad */
 .sokning-project-layout{
     display: grid;
     grid-template-columns: 1fr;
@@ -172,6 +179,8 @@ header{
 .project:hover{
     transform: scale(1.05);
 }
+
+/* liten animation som gör att projekten "fadear" in */
 @keyframes projectAnimation{
     0%{
         opacity: 0.8
@@ -184,8 +193,7 @@ header{
     margin: 1rem;
 }
 
-
-
+/* Bildspel */
 .grid4{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.184);
     grid-column: 1 / 3;
@@ -198,7 +206,7 @@ header{
     position: relative;
 }
 
-
+/* Fast storlek för bilder men object-fit contain får det att hållas på plats i sin ursprungliga storlek och skalas*/
 .bilder img{
     vertical-align: middle;
     width: 1000px;
@@ -235,7 +243,7 @@ header{
     display: block;
 }
 
-
+/* Animation som ger bilderna en fade effekt där de går från osynliga till synliga */
 @keyframes fade {
     0%{
         opacity: 0;
@@ -245,24 +253,30 @@ header{
     }
 }
 
+/* Klass för att gömma element till vänster från start */
 .scroll{
     opacity: 0;
     transform: translateX(-100%);
     transition: all 1s;
+    
 }
 
+/* klass för att få objekt att komma in från vänster till mitten av sidan, styrs av objectobserver i animation.js */
 .show{
     opacity: 1;
     transform: translateX(0);
 }
 
 
-
+/* För att inte projekten ska sträcka sig över hela skärmen vid sökning*/
 @media (max-width: 1800px){
     .sokning-project-layout{
         margin: 0 15rem; 
     }
 }
+
+/* går från 4 till tre kolummner i projekten */
+/* För att inte projekten ska sträcka sig över hela skärmen vid sökning*/
 @media (max-width: 1400px){
     .projects{
         grid-template-columns: 1fr 1fr 1fr;
@@ -274,13 +288,15 @@ header{
         padding: 1rem;
     }
 }
+/* För att inte projekten ska sträcka sig över hela skärmen vid sökning*/
 @media (max-width: 1200px){
     .sokning-project-layout{
         margin: 0 5rem; 
     }
 }
 
-
+/* Ändrar så att kompetenser kommer under om mig sidan genom att täcka alla kolumner */
+/* projekt går från 3 till två kolumner */
 @media (max-width: 1000px) {
     .grid1{
         grid-column: 1 / 3;
@@ -300,6 +316,10 @@ header{
 }
 
 
+/* större storlek på all text */
+/* visa menyikon istället för listan */
+/* projekt går från 2 kolumner till 1 */
+/* gör bilden på "mig" mindre */
 @media (max-width: 750px) {
     body{
         font-size: larger;

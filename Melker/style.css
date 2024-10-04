@@ -158,7 +158,6 @@ body {
 
 /* skillbar */
 .skill {
-    list-style-type: none;
     margin: 0px auto;
     width: 100%;
     max-width: 500px;
