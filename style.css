@@ -227,7 +227,7 @@ input, textarea {
 
 .grid2 img{
     border-radius: 5%;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .grid2 img:hover{

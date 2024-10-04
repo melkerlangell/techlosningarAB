@@ -14,7 +14,7 @@ const app = Vue.createApp({
                 return this.projekt;
             }
             return this.projekt.filter(info =>
-                info.Projekt.toLowerCase().startsWith(this.söktext.toLowerCase())
+                info.Projekt.toLowerCase().includes(this.söktext.toLowerCase())
             );
         }
     },
