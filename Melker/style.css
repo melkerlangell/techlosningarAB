@@ -36,7 +36,6 @@ body {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-right: 11vh; */
     transition: transform 0.3s ease;
 }
 
@@ -192,7 +191,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s;
 }
 
 .bar:hover {
